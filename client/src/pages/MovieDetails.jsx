@@ -90,7 +90,7 @@ function MovieDetails() {
             animate={{ opacity: 1 }}
             className="min-h-screen bg-background text-white selection:bg-accent"
         >
-            {}
+            { }
             <div className="relative h-[65vh] md:h-[85vh] w-full overflow-hidden">
                 <motion.div style={{ y: y1, opacity }} className="absolute inset-0">
                     {backdropUrl && (
@@ -113,10 +113,10 @@ function MovieDetails() {
                 </div>
             </div>
 
-            {}
+            { }
             <div className="max-w-7xl mx-auto px-6 -mt-64 relative z-10 pb-32">
                 <div className="flex flex-col lg:flex-row gap-16">
-                    {}
+                    { }
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -153,28 +153,28 @@ function MovieDetails() {
                         </div>
                     </motion.div>
 
-                    {}
+                    { }
                     <div className="flex-grow">
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                         >
-                            <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tighter leading-tight italic">
+                            <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-6 tracking-tighter leading-tight italic">
                                 {movie.title}
                             </h1>
 
-                            <div className="flex flex-wrap items-center gap-6 mb-10 text-gray-400 font-medium">
+                            <div className="flex flex-wrap items-center gap-4 md:gap-6 mb-10 text-gray-400 font-medium text-sm md:text-base">
                                 <span className="flex items-center gap-2 text-yellow-500 bg-yellow-500/10 px-3 py-1 rounded-lg">
-                                    <Star className="w-5 h-5 fill-current" />
+                                    <Star className="w-4 h-4 md:w-5 md:h-5 fill-current" />
                                     {movie.vote_average?.toFixed(1) || "N/A"}
                                 </span>
                                 <span className="flex items-center gap-2">
-                                    <Calendar className="w-5 h-5 text-purple-500" />
+                                    <Calendar className="w-4 h-4 md:w-5 md:h-5 text-purple-500" />
                                     {movie.release_date?.split("-")[0]}
                                 </span>
                                 {movie.runtime && (
                                     <span className="flex items-center gap-2">
-                                        <Clock className="w-5 h-5 text-blue-500" />
+                                        <Clock className="w-4 h-4 md:w-5 md:h-5 text-blue-500" />
                                         {movie.runtime}m
                                     </span>
                                 )}
@@ -182,7 +182,7 @@ function MovieDetails() {
 
                             <div className="flex flex-wrap gap-2 mb-12">
                                 {movie.genres?.map((g) => (
-                                    <span key={g.id} className="text-xs font-bold px-4 py-2 rounded-full glass uppercase tracking-widest text-purple-400">
+                                    <span key={g.id} className="text-[10px] md:text-xs font-bold px-3 py-1.5 md:px-4 md:py-2 rounded-full glass uppercase tracking-widest text-purple-400">
                                         {g.name}
                                     </span>
                                 ))}
@@ -192,12 +192,12 @@ function MovieDetails() {
                                 <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-gray-500 mb-6 flex items-center gap-2">
                                     <div className="w-8 h-[1px] bg-purple-500" /> Plot Summary
                                 </h2>
-                                <p className="text-xl md:text-2xl text-gray-300 leading-relaxed font-light max-w-4xl italic">
+                                <p className="text-lg sm:text-xl md:text-2xl text-gray-300 leading-relaxed font-light max-w-4xl italic">
                                     "{movie.overview}"
                                 </p>
                             </div>
 
-                            {}
+                            { }
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
                                 {director && (
                                     <div className="glass-dark p-6 rounded-2xl border-l-4 border-purple-500">
@@ -217,7 +217,7 @@ function MovieDetails() {
                                 )}
                             </div>
 
-                            {}
+                            { }
                             {trailer && (
                                 <div className="mt-20">
                                     <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-gray-500 mb-8 flex items-center gap-2">
