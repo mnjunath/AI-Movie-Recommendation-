@@ -2,6 +2,7 @@
 
 A premium, cinematic movie discovery platform powered by AI recommendations.
 
+**Live Frontend**: [https://ai-recommendation-zeta.vercel.app](https://ai-recommendation-zeta.vercel.app)
 **Live Backend**: [https://ai-movie-recommendation-qjts.onrender.com](https://ai-movie-recommendation-qjts.onrender.com)
 
 ## 🚀 Features
