@@ -2,6 +2,8 @@
 
 A premium, cinematic movie discovery platform powered by AI recommendations.
 
+**Live Backend**: [https://ai-movie-recommendation-qjts.onrender.com](https://ai-movie-recommendation-qjts.onrender.com)
+
 ## 🚀 Features
 
 - **AI Recommendations**: Get personalized movie suggestions based on natural language prompts (e.g., "movies like Inception but with more action").
